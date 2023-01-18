@@ -10,7 +10,7 @@ func hamming(s1, s2 string) int {
 			count++
 		}
 	}
-	return count
+	return count;
 }
 
 func main() {
