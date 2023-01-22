@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -20,7 +19,7 @@ type User struct {
 
 func main(){
 	r := gin.Default()
-	user := User{} 
+	user := []User{} 
 
 	getDataFunc := func(c *gin.Context){
 		data, err1 := ioutil.ReadFile("./dummy.json")
